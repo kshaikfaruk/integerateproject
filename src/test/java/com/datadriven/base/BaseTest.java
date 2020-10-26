@@ -13,12 +13,15 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
+import com.aventstack.extentreports.ExtentReporter;
+
 public class BaseTest {
 	public static WebDriver driver;
 	public static Properties config = new Properties();
 	public static Properties loco = new Properties();
 	public static FileInputStream fis;
 	public static Logger lo = Logger.getLogger("devpinoyLogger");
+	public ExtentReporter reporter;
 	public static WebDriverWait wait;
 
 	@BeforeSuite
