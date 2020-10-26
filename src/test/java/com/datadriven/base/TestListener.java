@@ -13,13 +13,13 @@ public class TestListener implements ITestListener {
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
+		 System.setProperty("org.uncommons.reportng.escape-output", "false");
+			Reporter.log("<img src=/>");
 		
 	}
 
 	public void onTestFailure(ITestResult result) {
-		 System.setProperty("org.uncommons.reportng.escape-output", "false");
-		Reporter.log("<img src=/>");
+		
 		
 	}
 
