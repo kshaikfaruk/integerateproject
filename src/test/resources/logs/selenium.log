@@ -1,4 +1,4 @@
-20:29:49,203 DEBUG devpinoyLogger:50 - file is loading
-20:29:49,210 DEBUG devpinoyLogger:54 - launching browser
-20:30:00,388 DEBUG devpinoyLogger:67 - navgiating to url
-20:30:42,817 DEBUG devpinoyLogger:12 - login 
+20:58:18,027 DEBUG devpinoyLogger:50 - file is loading
+20:58:18,027 DEBUG devpinoyLogger:54 - launching browser
+20:58:23,635 DEBUG devpinoyLogger:67 - navgiating to url
+21:00:27,824 DEBUG devpinoyLogger:12 - login 
