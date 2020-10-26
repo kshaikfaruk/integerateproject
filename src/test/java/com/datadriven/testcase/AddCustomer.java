@@ -9,6 +9,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -34,12 +35,10 @@ public class AddCustomer extends BaseTest {
 		
 		driver.findElement(By.xpath(loco.getProperty("addbtn"))).click();
 		 Alert alert = wait.until(ExpectedConditions.alertIsPresent());
+		 String alerttext=alert.getText();
+		 Assert.assertEquals(alerttext, msg);
          alert.accept();
-//		 Reporter.log("screenshot");
-//		 Reporter.log("<a href=> link</a>");
-//		 System.setProperty("org.uncommons.reportng.escape-output", "false");
 
-        // Thread.sleep(10000);
       	}
 
 	@DataProvider
@@ -48,7 +47,7 @@ public class AddCustomer extends BaseTest {
 		data[0][0] = "shaik";
 		data[0][1] = "shaik";
 		data[0][2] = "515003";
-		data[0][3] = "Customer added successfully ";
+		data[0][3] = "Customer addedss successfully ";
 		return data;
 	}
 }
