@@ -2,6 +2,7 @@ package com.datadriven.testcase;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.SkipException;
 import org.testng.annotations.Test;
 
 import com.datadriven.base.BaseTest;
@@ -12,7 +13,7 @@ public class LoginTest extends BaseTest {
 		lo.debug("login ");
 		WebElement elebtn = driver.findElement(By.xpath(loco.getProperty("managerlogin")));
 		elebtn.click();
-		Thread.sleep(10000);
+		  throw new SkipException(" login");
 	}
 
 }

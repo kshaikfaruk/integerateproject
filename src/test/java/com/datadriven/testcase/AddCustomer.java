@@ -37,6 +37,7 @@ public class AddCustomer extends BaseTest {
 		 Alert alert = wait.until(ExpectedConditions.alertIsPresent());
 		// String alerttext=alert.getText();
 		// Assert.assertEquals(alerttext, msg);
+		 Assert.fail();
          alert.accept();
 
       	}
