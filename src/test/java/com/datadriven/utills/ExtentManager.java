@@ -17,7 +17,7 @@ public class ExtentManager {
 		 Date d= new Date();
 		 String s=d.getDate()+" "+d.getHours()+" "+d.getMinutes()+d.getSeconds();
 		 String s1=s.replace(":", "_").replace(" ","_");
-  reports= new ExtentHtmlReporter("E:\\Testingproject\\datadriven\\test-output\\Extentreport.html");
+  reports= new ExtentHtmlReporter("E:\\Testingproject\\datadriven\\test-output\\"+s1+".html");
   reports.config().setReportName("datadriven");
   reports.config().setDocumentTitle("datadriven test");
    reports.config().setEncoding("utf-8");
